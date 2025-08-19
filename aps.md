@@ -37,38 +37,42 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 ## Logging into APS
 
 1.  Go to http://clive2025.alfdemo.com/
-2.  Select Activiti App under Alfresco Process Services.
+2.  Select **Activiti App** under *Alfresco Process Services*.
 3.  Login with User:Password - ```demo```:```demo```
-4.  Select App Designer.
-5.  Find your preconfigured onboarding# process. Ex. User 5 will use onboarding5
-6.  Select the Visual Editor button.
+4.  Select **App Designer**.
+5.  Find your preconfigured onboarding# process.
+   - Ex. User 5 will use onboarding5
+     
+6.  Select the **Visual Editor** button.
 
 # Mapping Data and Verify Form
 ## Mapping Data
 
-1.  In your onboarding properties panel, review the preconfigured variables
-2.  Select the Alfresco dropdown in the tools panel on the left and place a Retrieve Alfresco properties task to the process.
+1.  In your onboarding properties panel, review the preconfigured **variables**
+2.  Select the Alfresco dropdown in the tools panel on the left and place a **Retrieve Alfresco properties** task to the process.
 3.  Connect the start event to the task.
-4.  Name the task Map Data .
+4.  Name the task **Map Data** .
 5.  Open the Alfresco Properties in the task's properties panel.
-6.  Open the File dropdown and select apsdocument.
-7.  Add a property by selecting the + sign at the bottom of the table.
-8.  In the File Property type, ins:FirstName.
-9.  In the Property Type leave option as string.
-10.  In the Value Type, select the Variables button, and select the firstName variable.
-11.  Repeat the steps for the following properties (all Property Types will be string):
-12.  Press the Save button.
+6.  Open the File dropdown and select **apsdocument**.
+7.  Add a property by selecting the **+** sign at the bottom of the table.
+8.  In the File Property type, ```ins:FirstName```.
+9.  In the Property Type leave option as **string**.
+10.  In the Value Type, select the **Variables** button, and select the ```firstName``` variable.
+11.  Repeat the steps for the following properties *(all Property Types will be string):*
+
 
 | File Property     | Variable     |
 |-------------------|--------------|
-| ins:LastName      | lastName     |
-| ins:StreetAddress | address      |
-| ins:City          | city         |
-| ins:State         | state        |
-| ins:ZipCode       | zipCode      |
-| ins:Email         | email        |
-| ins:Phone         | phoneNumber  |
-| ins:PolicyNumber  | policyNumber |
+| ```ins:LastName```      | ```lastName```     |
+| ```ins:StreetAddress``` | ```address```      |
+| ```ins:City```          | ```city```         |
+| ```ins:State```         | ```state```        |
+| ```ins:ZipCode```       | ```zipCode```      |
+| ```ins:Email```         | ```email```        |
+| ```ins:Phone```         | ```phoneNumber```  |
+| ```ins:PolicyNumber```  | ```policyNumber``` |
+
+12.  Press the Save button.
 
 ## Verify Form
 
@@ -76,9 +80,7 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 2.  Connect your task and name it Verify Data.
 3.  Open the Referenced Form in the task's properties panel.
 4.  Select and Open the Validate-Data-New form.
-- a.  This preconfigured form will showcase the uploaded document as well as have the Personal and Policy Information prefilled with content that was retrieved from Textract.
-
-<!-- image -->
+    - a.  This preconfigured form will showcase the uploaded document as well as have the Personal and Policy Information prefilled with content that was retrieved from Textract.
 
 5.  Press the Save icon.
 6.  Press the Save and close editor button.
