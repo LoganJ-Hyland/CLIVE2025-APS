@@ -19,15 +19,16 @@ You're the APS Administrator for 9 Second Insurance, a fast-moving insurance com
 7.  Select the **9 Second Insurance** breadcrumb at the top to go back into the root folder.
 8.  Find your assigned folder **(User#)** and open it.
     - Ex. User 7 will use the User7 folder.
+<br>
 
 | There are three folders: Customer Policies, Intake, and Process. The Intake folder is where your agent will place the customer verification form. This folder has three rules: |
 | --- |
-
 | 1. When a document is added, it applies the 'Insurance' aspect to the metadata. |
 | 2. Once that's applied, it runs a custom aiTextract JavaScript. |
 | 3. After the script finishes, the document automatically moves to the Process folder. |
-
 | When the document enters the Process folder, an onboarding JavaScript runs to automatically start the onboarding process. |
+
+<br>
 
 9.  Open the ```9SecondFoodForm\_Blank.pdf``` and fill out the form and save for later use.
 
@@ -37,16 +38,12 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 
 1.  Go to http://clive2025.alfdemo.com/
 2.  Select Activiti App under Alfresco Process Services.
-
-<!-- image -->
-
-3.  Login with User:Password demo:demo
+3.  Login with User:Password - ```demo```:```demo```
 4.  Select App Designer.
 5.  Find your preconfigured onboarding# process. Ex. User 5 will use onboarding5
 6.  Select the Visual Editor button.
 
-## Mapping Data and Verify Form
-
+# Mapping Data and Verify Form
 ## Mapping Data
 
 1.  In your onboarding properties panel, review the preconfigured variables
