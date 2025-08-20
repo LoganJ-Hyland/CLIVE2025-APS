@@ -41,8 +41,7 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 3.  Login with User:Password - ```demo```:```demo```
 4.  Select **App Designer**.
 5.  Find your preconfigured onboarding# process.
-   - Ex. User 5 will use onboarding5
-     
+    - Ex. User 5 will use onboarding5
 6.  Select the **Visual Editor** button.
 
 # Mapping Data and Verify Form
@@ -80,8 +79,7 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 2.  Connect your task and name it ```Verify Data```.
 3.  Open the Referenced Form in the task's properties panel.
 4.  Select and Open the **Validate-Data-New** form.
-    - a.  This preconfigured form will showcase the uploaded document as well as have the Personal and Policy Information prefilled with content that was retrieved from Textract.
-
+    - This preconfigured form will showcase the uploaded document as well as have the Personal and Policy Information prefilled with content that was retrieved from Textract.
 5.  Press the **Save** icon.
 6.  Press the **Save and close editor** button.
 
@@ -93,7 +91,7 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 4.  Select the **Apps** tab located at the top of the window.
 5.  Select the **Create App** button.
 6.  Name the app ```onboarding#```.
-- a. Replace # with your User number. Ex: User 6 = onboarding6.
+    - Replace # with your User number. Ex: User 6 = onboarding6.
 7.  Select the Create new app definition button.
 8.  Select the Edit included models button.
 9.  Add your onboarding# model. Ex: User 9 would select onboarding9.
@@ -102,9 +100,7 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 12.  Select the **Save** icon.
 13.  Select the **checkbox** next to Publish and **save and close the editor** .
 14.  Go back into the Digital Workspace and drop/upload the filled **9SecondFoodForm\_Blank.pdf** into your **Intake** folder.
-
- - Ex: User 8 = My Libraries &gt; 9 Second Insurance &gt; User8 &gt; Intake *This rule can take up to a few minutes to fully OCR and move into the processing folder.
-
+     - Ex: User 8 = My Libraries &gt; 9 Second Insurance &gt; User8 &gt; Intake *This rule can take up to a few minutes to fully OCR and move into the processing folder.
 15.  Go back into Activiti and open your application on the main page.
 16.  Verify the data scanned correctly and press **complete** .
 
@@ -113,7 +109,7 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 ## Adding Customer to APS
 
 1.  Open your **onboarding#** process.
-- a.  Home &gt; App Designer &gt; onboarding#
+    - Home &gt; App Designer &gt; onboarding#
 2.  Delete the **End event** at the end of the Verify Data User Task.
 3.  Select the Activities dropdown in the tools panel on the left place and add a Script Task to your process.
 4.  Connect your task and name it ```Add Customer to APS```.
@@ -175,8 +171,6 @@ execution.setVariable('customerId', execution.getProcessInstanceId());
 ```
 5.  Press Save .
 
-
-
 ## Write Customer Data to Database
 
 1.  Select the *Activities* dropdown in the tools panel on the left place and add a **Store Entity Task** to your process.
@@ -222,9 +216,6 @@ execution.setVariable('customerId', execution.getProcessInstanceId());
 9.  Select **Response mapping** in the task's properties panel.
 10.  Press the **+** sign to add a JSON Property.
 11.  Enter ```data``` in the Property name.
-
-<!-- image -->
-
 12.  Enter ```userData``` in the Variable name.
 13.  Press **Save** .
 
@@ -278,7 +269,7 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 2.  Connect your task and name it ```Display User```.
 3.  Open the **Referenced Form** in the task's properties panel.
 4.  Select and Open the **Verify User data** form.
-   - This preconfigured form will showcase the Database data of the customer uploaded from the form as well as the data from APS. This is a simple verification step to ensure both data matches.
+    - This preconfigured form will showcase the Database data of the customer uploaded from the form as well as the data from APS. This is a simple verification step to ensure both data matches.
 5.  Press the **Save** icon.
 6.  Press the **Save and close editor** button.
 
@@ -294,9 +285,7 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 8.  Go back into the Digital Workspace and drop/upload the filled 9SecondFoodForm\_Blank.pdf into your Intake folder.
 9.  Go back into Activiti and open your application on the main page.
 10.  Verify the data scanned correctly and press complete .
-
- - **Due to APS not being able to store duplicate Email's, change the email address by adding a number before the @ sign. Ex.test2@test.com**
-
+     - **Due to APS not being able to store duplicate Email's, change the email address by adding a number before the @ sign. Ex.test2@test.com**
 11.  Verify the data in the database matches the data from APS correctly and press **complete** .
 
 ## Java Delegates
@@ -304,7 +293,7 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 ## Java Delegate
 
 1.  Open your **onboarding#** process.
-- a.  Home &gt; App Designer &gt; onboarding#
+    - Home &gt; App Designer &gt; onboarding#
 2.  Delete the **End event** at the end of the *Verify Data User* Task.
 3.  Select the *Activities* dropdown in the tools panel on the left place and add a **Service Task** to your process.
 4.  Connect your task and name it ```KYC Delegate```.
@@ -335,7 +324,7 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 5.  In the _Action_ dropdown, select **Move** .
 6.  In the _Action Parameters_ , select the **Values** column.
 7.  In the Values section, replace &lt;ID&gt; with your specific OH folder node ID.
-- a.  **To find your node, go back into the Digital workspace. Open the Customer Policies &gt; OH based Policy Folder. In the address bar, you will find the folder node after (libraries/)**
+    - **To find your node, go back into the Digital workspace. Open the Customer Policies &gt; OH based Policy Folder. In the address bar, you will find the folder node after (libraries/)**
 8.  Press **Save**.
 9.  Select the **Content** in the task's properties panel.
 10.  Select the **Variable** tab.
@@ -369,7 +358,7 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 8.  Go back into the Digital Workspace and drop/upload the filled **9SecondFoodForm\_Blank.pdf** into your **Intake** folder.
 9.  Go back into Activiti and open your application on the main page.
 10.  Verify the data scanned correctly and press **complete** .
-- a.  **Due to APS not being able to store duplicate Email's, change the email address by adding a number before the @ sign. Ex.test2@test.com**
+     - **Due to APS not being able to store duplicate Email's, change the email address by adding a number before the @ sign. Ex.test2@test.com**
 11.  Verify the document moved to the correct folder.
 
 ## Your final Model should look similar to this.
