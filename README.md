@@ -3,4 +3,4 @@
 ---
 * This repo contains steps necessary to build processes meant for an intermediate audience.
 * Select the workflow md files and follow steps.
-* [Click Here to Begin](Alfresco_Process_Services:Intermediate_Techniques.md)
+* [Click Here to Begin](CLIVE2025-APS/Alfresco_Process_Services:Intermediate_Techniques.md)
