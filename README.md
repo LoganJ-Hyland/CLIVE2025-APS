@@ -2,5 +2,5 @@
 
 ---
 * Welcome our newly hired APS Architects to Community Live 2025!
-* [Presentaiton](/Student%20Documents/Alfresco_Process_Services:Intermediate_Techniques.md)
+* [Presentaiton](/Student20%Documents/Alfresco_Process_Services:Intermediate_Techniques.md)
 * [Click Here to Begin](/Alfresco_Process_Services:Intermediate_Techniques.md)
