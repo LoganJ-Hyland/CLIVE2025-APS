@@ -178,7 +178,7 @@ execution.setVariable('customerId', execution.getProcessInstanceId());
 3.  Select the **Attribute Mapping** in the task's properties panel.
 4.  Press the dropdown for *Mapped data model* and select **9siCustomerNew** .
 5.  Press the dropdown for *Mapped entity* and select **newCustomers** .
-6.  Type **newCustomerdata** in the New variable window.
+6.  Type ```newCustomerdata``` in the New variable window.
 7.  Select the first cell under Mapped value.
 8.  Press the **Variable** button and select **customerId** .
 9.  Repeat the steps for the following Attribute name:
