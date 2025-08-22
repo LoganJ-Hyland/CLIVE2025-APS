@@ -198,19 +198,3 @@ function performDataExtraction() {
     }
 
 }
-
-
-/*
-	Example-Code-Start
-    if (ktext.match(/as shown on your income tax return/gi) || ktext.match(/as shown on your income/gi) || ktext.match(/as sahowe on your income tae retum/gi)) {
-    	doc.properties["tx:name"] = value;
-        logger.info("\nFound income tax returning: " + ktext + "\nValue: " + value);
-    }
-
-	if (block.text.match(/^W-9$/gi)) {
-        logger.info("Found W-9 in: " + block.text);
-        doc.properties["tx:docType"] = block.text;
-    }
-
-	Example-Code-End
-*/
