@@ -111,9 +111,9 @@ REPLACE THE 'X' AT THE END OF THE POLICY/GROUP NUMBER WITH YOUR USER NUMBER.
 1.  Open your **onboarding#** process.
     - Home &gt; App Designer &gt; onboarding#
 2.  Delete the **End event** at the end of the Verify Data User Task.
-3.  Select the Activities dropdown in the tools panel on the left place and add a Script Task to your process.
+3.  Select the _Activities_ dropdown in the tools panel on the left place and add a **Script Task** to your process.
 4.  Connect your task and name it ```Add Customer to APS```.
-5.  Select the Script format in the task's properties panel and type groovy .
+5.  Select the Script format in the task's properties panel and type ```groovy``` .
 6.  Select the Script in the task's properties panel and copy the following:
   ```
   import com.activiti.service.idm.UserServiceImpl;
