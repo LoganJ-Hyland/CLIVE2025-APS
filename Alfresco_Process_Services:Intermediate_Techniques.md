@@ -290,6 +290,8 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 
 ## Java Delegates
 
+![alt text](Images/JavaDel.png "Java Delegate used in environment")
+
 ## Java Delegate
 
 1.  Open your **onboarding#** process.
