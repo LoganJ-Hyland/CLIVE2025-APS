@@ -362,4 +362,4 @@ execution.setVariable("recordList", new JsonBuilder( recordList ).toPrettyString
 11.  Verify the document moved to the correct folder.
 
 ## Your final Model should look similar to this.
-![alt text](APS_Final.png "Final BMPN Model")
+![alt text](Images/APS_Final.png "Final BMPN Model")
